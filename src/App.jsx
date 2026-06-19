@@ -5,18 +5,13 @@ import MainLayout from "./components/layouts/MainLayout";
 
 
 function App() {
-
   return (
-    <>
- <Container className="">
     <Routes>
-     <Route element={<MainLayout/>}>
-        <Route path='/' element={<Home/>} />
-     </Route>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
     </Routes>
- </Container>
-    </>
-  )
+  );
 }
 
 export default App
