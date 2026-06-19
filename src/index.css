@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme{
+    --font-inter : "inter", sans-serif;
+    --font-archivo: "archivo", sans-serif;
+    --color-primary: #090C10;
+    --color-green: #CDFA89
+}
+@font-face {
+    font-family: "inter";
+    src: url(./fonts/Inter/static/Inter_18pt-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "archivo";
+    src: url(./fonts/Archivo/static/Archivo-Medium.ttf) format("truetype");
+}
+
+@layer components{
+    .primaryTxt {
+        @apply text-[#3C4049] text-[14px] font-inter 
+    }
+}
+@layer components{
+    .headingTxt {
+        @apply text-[#002E25] font-archivo 
+    }
+}
+
+@layer components{
+    .learnTxt{
+        @apply  text-[#002E25] font-inter text-[14px] 
+    }
+}
