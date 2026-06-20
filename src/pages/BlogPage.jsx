@@ -1,11 +1,10 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import LatestArticles from "../components/Blog/LatestArticles"
+
 
 const BlogPage = () => {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <LatestArticles />
     </>
   )
 }
