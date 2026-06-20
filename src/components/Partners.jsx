@@ -9,11 +9,12 @@ import customer1 from "../assets/images/rifat-img09.webp"
 import customer2 from "../assets/images/rifat-img10.webp"
 import customer3 from "../assets/images/rifat-img11.webp"
 import customer4 from "../assets/images/rifat-img12.webp"
+import Container from "./layouts/Container";
 
 
 const Partners = () => {
   return (
-    <div>
+    <Container>
         {/* Partners */}
         <div className="bg-bg w-full">
             <div className="container py-30 grid grid-cols-2">
@@ -88,7 +89,7 @@ const Partners = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </Container>
   )
 }
 

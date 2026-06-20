@@ -8,11 +8,12 @@ import productivity from "../assets/images/rifat-img03.webp";
 import { FaRegArrowAltCircleRight ,FaDribbble ,FaArrowRight} from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import Container from "./layouts/Container";
 
 
 const Proposition = () => {
   return (
-    <div className="container bg-white">
+    <Container className="container bg-white">
         {/* Passion */}
         <div className="grid grid-cols-4 my-25">
             <div className="">
@@ -133,7 +134,7 @@ const Proposition = () => {
                 <p className="primaryTxt">Integrate your favourite platforms with Slate in seconds. Seamless uninterrupted service.</p>
             </div>
         </div>
-    </div>
+    </Container>
   )
 }
 

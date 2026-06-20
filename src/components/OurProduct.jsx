@@ -4,6 +4,7 @@ import "swiper/css/scrollbar";
 import { Autoplay } from "swiper/modules";
 import { SiEvernote } from "react-icons/si";
 import Creative from "../assets/images/rifat-img01.webp"
+import Container from "./layouts/Container";
 
 const OurProduct = () => {
     let slider1 = {
@@ -11,13 +12,13 @@ const OurProduct = () => {
     slidesPerView: 3,
     loop: true,
     autoplay : {
-      delay: 1000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     modules: [ Autoplay ],
   }
   return (
-    <div className="bg-bg w-full pt-30">
+    <Container className="bg-bg w-full pt-30">
         <div className="container pb-9">
             <p className="primaryTxt text-center font-medium">Our Product</p>
             <h2 className="headingTxt font-medium text-[72px] text-center">We’re on a <span className="bg-green py-1 px-2 rounded-md">mission to</span> <br/> power customers.</h2>
@@ -67,7 +68,7 @@ const OurProduct = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </Container>
   )
 }
 
