@@ -1,6 +1,6 @@
-import OurProduct from '../components/OurProduct'
-import Partners from '../components/Partners'
-import Proposition from '../components/Proposition'
+import OurProduct from '../components/Product/OurProduct'
+import Partners from '../components/Product/Partners'
+import Proposition from '../components/Product/Proposition'
 
 const Product = () => {
   return (

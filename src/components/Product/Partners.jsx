@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
 import { FaArrowRight } from "react-icons/fa";
-import Partner1 from "../assets/images/rifat-img04.webp"
-import Partner2 from "../assets/images/rifat-img05.webp"
-import Partner3 from "../assets/images/rifat-img06.webp"
-import Partner4 from "../assets/images/rifat-img07.webp"
-import Partner5 from "../assets/images/rifat-img08.webp"
-import customer1 from "../assets/images/rifat-img09.webp"
-import customer2 from "../assets/images/rifat-img10.webp"
-import customer3 from "../assets/images/rifat-img11.webp"
-import customer4 from "../assets/images/rifat-img12.webp"
-import Container from "./layouts/Container";
+import Partner1 from "../../assets/images/rifat-img04.webp"
+import Partner2 from "../../assets/images/rifat-img05.webp"
+import Partner3 from "../../assets/images/rifat-img06.webp"
+import Partner4 from "../../assets/images/rifat-img07.webp"
+import Partner5 from "../../assets/images/rifat-img08.webp"
+import customer1 from "../../assets/images/rifat-img09.webp"
+import customer2 from "../../assets/images/rifat-img10.webp"
+import customer3 from "../../assets/images/rifat-img11.webp"
+import customer4 from "../../assets/images/rifat-img12.webp"
+import Container from "../layouts/Container";
 
 
 const Partners = () => {
