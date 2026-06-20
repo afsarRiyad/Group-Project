@@ -3,6 +3,7 @@ import OurBlogs from '../components/layouts/OurBlogs'
 import StrategicChoice from '../components/layouts/StrategicChoice'
 import Customers from '../components/layouts/Customers'
 import Productivity from '../components/layouts/Productivity'
+import Testimonials from '../components/layouts/Testimonials'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
        <StrategicChoice/>
        <Customers/>
        <Productivity/>
+       <Testimonials/>
     </>
   )
 }
