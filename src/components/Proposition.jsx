@@ -81,8 +81,8 @@ const Proposition = () => {
             </div>
         </div>
         {/* productivity */}
-        <div className="bg-bg w-full rounded-2xl">
-            <div className="py-22 px-33.5 flex justify-between gap-9">
+        <div className="bg-[#F6F7F8] w-full rounded-2xl">
+            <div className="py-22 px-25 flex justify-between items-center">
                 <div className="pr-40">
                     <h3 className="text-primary text-[40px] font-medium font-archivo">Make productivity easier with 50+ Integrations</h3>
                     <p className="text-[#3C4049] text-[16px] font-inter pt-6.5">Seamless integrations with uninterrupted service. You can trust Slate to deliver every time. </p>
@@ -90,7 +90,7 @@ const Proposition = () => {
                     <Link className="flex gap-2 px-5 py-2.5 items-center rounded-full bg-black text-white">Learn More <FaRegArrowAltCircleRight /></Link>
                     </div>
                 </div>
-                <div className="">
+                <div className="h-[232px] ">
                     <img src={productivity} alt="productivity" />
                 </div>
             </div>
