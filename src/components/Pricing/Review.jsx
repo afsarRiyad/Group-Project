@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import logo from '../assets/images/review-logo.png'
-import dylan from '../assets/images/review-dylan.png'
+import logo from '../../assets/images/review-logo.png'
+import dylan from '../../assets/images/review-dylan.png'
 import { FaStar } from "react-icons/fa6";
 
 
@@ -13,7 +13,7 @@ const Review = () => {
     slidesPerView: 3,
     loop: true,
     autoplay : {
-      delay: 1500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     modules: [ Autoplay ],

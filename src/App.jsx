@@ -2,7 +2,7 @@ import Container from "./components/layouts/Container"
 import { Routes, Route } from "react-router";
 import Home from './pages/Home';
 import MainLayout from "./components/layouts/MainLayout";
-import Praicing from "./pages/Praicing";
+import Pricing from "./pages/Pricing";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/praicing" element={<Praicing />} />
+        <Route path="/praicing" element={<Pricing />} />
       </Route>
     </Routes>
   );
