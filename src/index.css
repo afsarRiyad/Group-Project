@@ -32,3 +32,6 @@
         @apply  text-[#002E25] font-inter text-[14px] 
     }
 }
+.container {
+    @apply max-w-298 mx-auto
+}
