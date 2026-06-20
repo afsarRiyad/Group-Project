@@ -13,7 +13,7 @@ const LatestArticles = () => {
           </div>
           <div className='pt-2 pb-10 flex justify-between items-center'>
             <h2 className='headingTxt text-[72px] font-medium'>Our latest <span className='bg-green px-3 py-1'>articles</span></h2>
-            <p className='primaryTxt text-[18px] font-normal max-w-[380px]'>Make informed decisions with confidence. Slate provides you with insights.</p>
+            <p className='primaryTxt text-[18px] font-normal max-w-[380px] pt-6'>Make informed decisions with confidence. Slate provides you with insights.</p>
           </div>
           <div className='grid grid-cols-2 gap-8'>
             <div className='bg-white rounded-lg shadow-md overflow-hidden p-1'>

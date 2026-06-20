@@ -4,7 +4,7 @@ import BlogPage from './blogpage'
 const Home = () => {
   return (
     <>
-      <BlogPage />
+       Home
     </>
   )
 }
