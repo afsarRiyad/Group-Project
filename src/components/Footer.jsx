@@ -65,7 +65,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="px-8 py-4 bg-green text-slate-950 font-semibold rounded-full hover:bg-lime-300 transition-colors text-lg font-inter"
+                className="px-8 py-4 bg-green text-slate-950 font-semibold rounded-full hover:bg-lime-300 transition-colors text-lg font-inter cursor-pointer"
               >
                 {subscribed ? '✓ Subscribed!' : 'Subscribe'}
               </button>
