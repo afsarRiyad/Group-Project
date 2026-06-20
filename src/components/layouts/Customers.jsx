@@ -9,8 +9,8 @@ const Customers = () => {
   return (
     <>
      <Container>
-        <div className='mt-16 lg:mt-30 px-4 sm:px-0'>
-            <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-y-6 mb-12'>
+        <div className='mt-16 lg:mt-30 px-4 sm:px-0 '>
+            <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-y-6 mb-12 '>
                 <div className='max-w-[478px]'>
                     <p className='primaryTxt font-medium mb-5'>Creative Freedom</p>
                     <h3 className='headingTxt text-3xl md:text-[42px] font-medium leading-tight'>
@@ -32,7 +32,7 @@ const Customers = () => {
                     <Link> <li className='border-1 border-[#d3d2d2] rounded-[5px] py-1.5 px-3 hover:bg-[#F6F7F8]'>Small Business</li></Link>
                 </ul>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 mb-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 mb-8 pb-30'>
                 <div className='flex flex-col items-start w-full'>
                     <img src={manone} alt="manone" className='w-full object-cover rounded-lg' />
                     <h3 className='headingTxt text-[20px] font-medium mt-6'>Customer Case Study</h3>
