@@ -8,7 +8,7 @@ import Containerr from '../../assets/images/Containerr.webp';
 const OurBlogs = () => {
   return (
     <Container>
-      <div className="mb-16 lg:mb-24 pb-16 lg:pb-30">
+      <div className=" pb-16 lg:pb-30">
         <div className="text-center mb-12 lg:mb-24">
           <p className="primaryTxt">Our Blogs</p>
 
