@@ -45,7 +45,7 @@ const Navbar = () => {
 
           {/* Nav links */}
           <div className="hidden md:flex items-center gap-8 primaryTxt ">
-            <a href="#" className="hover:text-black transition-colors">
+            <a href="/Company" className="hover:text-black transition-colors">
               Company
             </a>
             <a href="#" className="hover:text-black  transition-colors">
