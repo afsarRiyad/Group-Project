@@ -62,12 +62,12 @@ const Navbar = () => {
          </div>
 
           <div className="flex items-center gap-3">
-            <button className="px-5 py-2.5 text-sm font-medium text-primary border cursor-pointer border-primary rounded-full hover:bg-gray-50 transition-colors">
+            <Link to='/login' className="px-5 py-2.5 text-sm font-medium text-primary border cursor-pointer border-primary rounded-full hover:bg-gray-50 transition-colors">
               Sign in
-            </button>
-            <button className="px-5 py-2.5 cursor-pointer text-sm font-medium text-white bg-[#002E25] rounded-full hover:bg-[#003d30] transition-colors">
+            </Link>
+            <Link to='/registration' className="px-5 py-2.5 cursor-pointer text-sm font-medium text-white bg-[#002E25] rounded-full hover:bg-[#003d30] transition-colors">
               Sign up for free
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
