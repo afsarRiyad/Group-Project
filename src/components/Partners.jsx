@@ -14,16 +14,17 @@ import Container from "./layouts/Container";
 
 const Partners = () => {
   return (
-    <Container>
+      <>
+      <div className="bg-[#F6F7F8]">
         {/* Partners */}
-        <div className="bg-bg w-full">
-            <div className="container py-30 grid grid-cols-2">
+        <Container>
+            <div className="container py-30 grid grid-cols-2 ps-10">
                 <div className="">
                     <p className="primaryTxt font-medium">Creative Freedom</p>
                     <h3 className="headingTxt font-medium text-[48px] pt-5 pb-9"><span className="bg-green py-1 px-2 rounded-md">Slate Template</span> <br/>Partners + Clients</h3>
                     <p className="text-[#3C4049] text-[16px] font-inter font-medium pb-10">Join our growing network of clients that are <br/> experiencing the Slate difference every day.</p>
-                    <div className="">
-                        <Link to="#" className="text-[#002E25] font-archivo flex text-2xl gap-3 items-center">Learn More <FaArrowRight className=" bg-[#002E25] text-white rounded-full p-1"/></Link>
+                    <div className=" w-38  ">
+                        <Link to="#" className="  py-3 rounded-full bg-primary ps-3 text-white font-archivo flex text-[16px] gap-3 items-center">Learn More <FaArrowRight className=" bg-[#002E25] text-white rounded-full border "/></Link>
                     </div>
                 </div>
                 <div className="grid grid-cols-3 mt-10">
@@ -35,8 +36,10 @@ const Partners = () => {
                     <img src={Partner1} alt="Partner" />
                 </div>
             </div>
+        </Container>
         </div>
         {/* industry leaders */}
+        <Container>
         <div className="container py-30">
             <div className="text-center">
                 <p className="text-[#3C4049] text-[16px] font-inter">Our Blogs</p>
@@ -90,6 +93,7 @@ const Partners = () => {
             </div>
         </div>
     </Container>
+      </>
   )
 }
 
