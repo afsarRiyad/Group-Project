@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from './Container';
 import { IoIosPlay } from "react-icons/io";
 import plus from '../../assets/images/plus.webp';
+import Container from '../layouts/Container';
 
 const StrategicChoice = () => {
   return (
