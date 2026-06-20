@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from './Container';
 import containerOne from '../../assets/images/ContainerOne.webp';
 import Meringu from '../../assets/images/Meringu.webp';
 import ContainerTwo from '../../assets/images/ContainerTwo.webp';
 import Containerr from '../../assets/images/Containerr.webp';
+import Container from '../layouts/Container';
 
 const OurBlogs = () => {
   return (

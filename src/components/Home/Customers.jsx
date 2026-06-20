@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from './Container';
+import Container from '../layouts/Container';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import manone from '../../assets/images/manone.webp'
