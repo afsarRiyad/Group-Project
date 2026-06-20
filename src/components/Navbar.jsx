@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaTelegramPlane, FaPinterestP } from "react-i
 import { HiOutlineCube } from "react-icons/hi";
 import Container from "./layouts/Container";
 import logo from "../assets/images/logo.webp"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -38,23 +39,25 @@ const Navbar = () => {
       <nav className="bg-white">
         <div className="flex items-center justify-between px-6 py-5">
           {/* Logo */}
-         <div className="flex gap-18">
-            <img src={logo} alt="logo" />
+         <div className="flex gap-18 cursor-pointer">
+            <Link to='/'>
+              <img src={logo} alt="logo" />
+            </Link>
 
           {/* Nav links */}
           <div className="hidden md:flex items-center gap-8 primaryTxt ">
-            <a href="#" className="hover:text-black transition-colors">
+            <Link to="#" className="hover:text-black transition-colors">
               Company
-            </a>
-            <a href="#" className="hover:text-black  transition-colors">
+            </Link>
+            <Link to="/product" className="hover:text-black  transition-colors">
               Product
-            </a>
-            <a href="#" className="hover:text-black  transition-colors">
+            </Link>
+            <Link to="#" className="hover:text-black  transition-colors">
               Pricing
-            </a>
-            <a href="#" className="hover:text-black  transition-colors">
+            </Link>
+            <Link to="#" className="hover:text-black  transition-colors">
               Blog
-            </a>
+            </Link>
           </div>
          </div>
 
