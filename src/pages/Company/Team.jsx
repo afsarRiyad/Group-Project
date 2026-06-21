@@ -5,7 +5,7 @@ import DylanText from '../../assets/images/Company_pic/DylanText.webp'
 import Fig from '../../assets/images/Company_pic/Fig.webp'
 import FigText from '../../assets/images/Company_pic/FigText.webp'
 import Cecilia from '../../assets/images/Company_pic/Cecilia.webp'
-import CeciliaText from '../../assets/images/Company_pic/CeciliaText.webp'
+import ceiciliaText from '../../assets/images/Company_pic/Ceciliatext.webp'
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -53,7 +53,7 @@ export const Team = () => {
 
                     <div className='items-center text-center'>
                        <img src={Cecilia} alt="Cecilia"  className=' mb-[32px] mt-[40px]'/>
-                       <img src={CeciliaText} alt="CeciliaText" />
+                       <img src={ceiciliaText} alt="CeciliaText" />
                        <div className='flex gap-[12px] justify-center mt-[24px]'> 
                        <Link to='https://www.facebook.com'><FaFacebook  className='w-[40px] h-[40px] rounded-full py-3 px-3 inset-ring'/></Link> 
                         <FaTwitter className='w-[40px] h-[40px] rounded-full py-3 px-3 inset-ring'/> 
