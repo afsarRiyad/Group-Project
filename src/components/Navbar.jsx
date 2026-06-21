@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link to="/product" className="hover:text-black  transition-colors">
               Product
             </Link>
-            <Link to="#" className="hover:text-black  transition-colors">
+            <Link to="/Pricing" className="hover:text-black  transition-colors">
               Pricing
             </Link>
             <Link to="#" className="hover:text-black  transition-colors">

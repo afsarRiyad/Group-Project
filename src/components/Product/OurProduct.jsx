@@ -3,8 +3,9 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import { Autoplay } from "swiper/modules";
 import { SiEvernote } from "react-icons/si";
-import Creative from "../assets/images/rifat-img01.webp"
-import Container from "./layouts/Container";
+import Creative from "../../assets/images/rifat-img01.webp"
+import Container from "../layouts/Container";
+
 
 const OurProduct = () => {
     let slider1 = {
