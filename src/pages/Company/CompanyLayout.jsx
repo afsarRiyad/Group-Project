@@ -14,10 +14,9 @@ import { Offices } from './Offices';
 export const CompanyLayout = () => {
   return (
     <>
-
-
-    <Container>
-        <div className='main max-w-[1192px] flex justify-between mt-[111px]'>
+<div className='bg-[#F3F7F6] pt-25'>
+        <Container>
+        <div className=' flex justify-between '>
             <div className=''>
                 <h4 className='font-inter text-[14px] font-medium '>Slate Our Story </h4>
                 <h3 className='text-[72px] font-archivo font-medium '>We’re on a <span className='bg-green pt-4 pb-4 pl-[12px] pr-[9px] rounded-lg'>mission to</span></h3>
@@ -42,7 +41,7 @@ export const CompanyLayout = () => {
         </div>
         {/* 2nd part > "Supporting smart */}
 
-        <div className='flex justify-around'>
+        <div className='flex justify-between'>
             <div className='text-[48px] font-archivo font-medium'>
                 <h3 className='bg-green pl-2 pb-[10px] pr-[7px] rounded-lg'>Supporting smart </h3>
                 <h3 className=''>business globally</h3>
@@ -52,14 +51,15 @@ export const CompanyLayout = () => {
                 <p className='w-[530px]'>Slate is designed to unleash your creative potential. Whether you're a  marketer, designer, or developer, our intuitive interface and robust features enable you to bring your ideas to life. From creating stunning visuals to crafting engaging content, let your creativity shine with Slate.</p>
             </div>
         </div>
-        {/* Others All Section */}
+    </Container>
+</div>
         
+        {/* Others All Section */}
         <Creative/>
         <Business/>
         <Slate/>
         <Team/>
         <Offices/>
-    </Container>
     </>
   )
 }

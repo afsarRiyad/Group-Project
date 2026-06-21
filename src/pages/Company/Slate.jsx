@@ -11,11 +11,9 @@ import CompanyLogo5 from '../../assets/images/Company_pic/CompanyLogo5.webp'
 export const Slate = () => {
   return (
     <>
-
-
-    
-    <Container>
-          <div className='main flex justify-between mb-[120px]'>
+    <div className='bg-[#F3F7F6] py-25 flex items-center mb-10'>
+         <Container>
+          <div className='main flex items-center justify-between '>
         <div>
             <h6 className='font-inter font-medium text-[14px] mb-[19px]'>Creative Freedom</h6>
             <h4 className='max-w-[340px] font-archivo font-medium text-[48px] bg-green pl-2 pr-[6px] pb-[10px] rounded-lg'>Slate Template</h4>
@@ -39,7 +37,7 @@ export const Slate = () => {
     </div> 
     </Container>
  
-    
+    </div>
     </>
   )
 }

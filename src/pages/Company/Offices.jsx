@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom'
 export const Offices = () => {
   return (
     <>
-    <Container>
-
-              <div className="main mb-[150px]">
+   <div className='bg-[#F3F7F6] py-28'>
+      <Container>
+              <div className="main ">
                 <div className="text-center mb-[56px] ">
                   <h6 className="font-inter text-[16px] font-medium">Slate Locations</h6>
                   <h4 className="font-archivo text-[48px] font-medium text-center">
@@ -52,7 +52,7 @@ export const Offices = () => {
                 </div>
               </div>
     </Container>
-    
+    </div>    
     </>
   )
 }

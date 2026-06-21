@@ -1,11 +1,25 @@
 import CompanyBanner1 from '../../assets/images/Company_pic/CompanyBanner1.webp'
 import Sign from '../../assets/images/Company_pic/Sign.webp'
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import Container from '../../components/layouts/Container';
 
 export const Creative = () => {
   return (
     <>
-    <div className="main flex justify-center mt-[157px] mb-[120px]">
+            <Container className='pb-40'>
+            <div className='flex flex-col gap-5 justify-self-end  pt-5'>
+                <span className='max-w-[527px] font-inter text-[16px]  font-normal text-[#090C10]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+                     sodales leo id commodo ornare. Vestibulum lobortis ligula vehicula:
+                </span>
+                <span className='max-w-[427px] font-inter text-[16px]  font-normal text-[#090C10]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+            </div>
+        </Container>
+    <Container className="main flex justify-center  mb-[160px]">
          <div>
             <h6 className="font-inter font-medium text-[14px]">Creative Freedom</h6>
              <h4 className="font-archivo font-medium text-[40px]"><span className='bg-green pl-2 pr-[6px] pb-[9px] rounded-lg'>Build a solution</span> that wins</h4>
@@ -31,7 +45,7 @@ export const Creative = () => {
          <div>
             <img src={CompanyBanner1} alt="CompanyBanner1" />
          </div>
-    </div>
+    </Container>
     
     
     </>
