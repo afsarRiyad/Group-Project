@@ -6,6 +6,7 @@ import bbbbb from '../assets/images/footerLogo.webp'
 import Backgr from '../assets/images/YKX00qAsgJpmOM4mzoqt8kZLAgs.svg.png'
 import Backg from '../assets/images/WzWGW3CgEZyoaUVrXzt0bW9FU.png.png'
 import Back from '../assets/images/NEtHJDwruTYfTUuFfKiw5sp8xM.svg.png'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -16,11 +17,11 @@ const Login = () => {
                 <p className="font-inter font-medium text-[14px] text-[#9EA2AD]">Login</p>
                 <h2 className="font-archivo font-medium text-[32px] text-black pb-[30px]">Welcome to Slate!</h2>
 
-                <div className="flex justify-center items-center bg-[#F6F7F8] mb-[16px] py-[12px] rounded-[50px]">
-                    <h3 className="flex items-center gap-2.5 font-inter font-medium text-[14px]"><FcGoogle className="w-[24px] h-[24px] text-[#090C10]"/> Continue with Google</h3>
+                <div className="flex justify-center items-center bg-[#F6F7F8] mb-[16px] py-[12px] rounded-[50px] cursor-pointer hover:bg-gray-300/50 duration-150">
+                    <h3 className="flex items-center gap-2.5 font-inter font-medium text-[14px]"><FcGoogle className="w-[24px] h-[24px] text-[#090C10] "/> Continue with Google</h3>
                 </div>
 
-                <div className="flex justify-center items-center bg-[#F6F7F8] py-[12px] mb-[31px] rounded-[50px]">
+                <div className="flex justify-center items-center bg-[#F6F7F8] py-[12px] mb-[31px] rounded-[50px] cursor-pointer hover:bg-gray-300/50 duration-150 ">
                     <h3 className="flex items-center gap-2.5 font-inter font-medium text-[14px]"><FaTwitter className="w-[24px] h-[24px] text-[#1DA1F2]" /> Continue with Google</h3>
                      </div>
 
@@ -38,9 +39,9 @@ const Login = () => {
 
                     <input className="py-[17px] pl-[15px] rounded-[50px] w-full bg-[#F6F7F8]" type="text" placeholder="Password"/>
 
-                    <button className="bg-[black] text-[white] mb-[50px] w-full py-[17px] mt-[30px] rounded-[50px] font-inter font-semibold text-[14px]">Login</button>
+                    <button className="bg-[black] text-[white] mb-[50px] w-full py-[17px] mt-[30px] rounded-[50px] font-inter font-semibold text-[14px]  hover:bg-black/80 duration-150 cursor-pointer">Login</button>
 
-                    <p className="font-inter font-medium text-[14px]">Don’t have an account?  <span className="font-inter font-medium text-[14px text-[#9EA2AD]">Register</span> </p>
+                    <Link to='/registration' className="font-inter font-medium text-[14px]">Don’t have an account?  <span className="font-inter font-medium text-[14px text-[#9EA2AD]">Register</span> </Link>
 
             </div>
             <div>
