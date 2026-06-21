@@ -2,13 +2,13 @@ import { RiGlobeLine } from "react-icons/ri";
 import { MdLightbulbOutline } from "react-icons/md";
 import { LuMessageSquareMore } from "react-icons/lu";
 import { CiClock2 } from "react-icons/ci";
-import performance from "../assets/images/rifat-img02.webp";
+import performance from "../../assets/images/rifat-img02.webp";
 import { Link } from "react-router-dom";
-import productivity from "../assets/images/rifat-img03.webp";
+import productivity from "../../assets/images/rifat-img03.webp";
 import { FaRegArrowAltCircleRight ,FaDribbble ,FaArrowRight} from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
-import Container from "./layouts/Container";
+import Container from "../../components/layouts/Container";
 
 
 const Proposition = () => {
