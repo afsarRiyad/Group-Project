@@ -5,6 +5,10 @@ import MainLayout from "./components/layouts/MainLayout";
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
 import { Company } from "./pages/Company/Company";
+import Regestration from "./components/Regestration";
+import Login from "./components/Login";
+
+import BlogPage from "./pages/blogpage";
 
 
 function App() {
@@ -15,6 +19,9 @@ function App() {
         <Route path='/product' element={<Product />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/Company" element={<Company />} />
+        <Route path='/registration' element={<Regestration/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/blog' element={<BlogPage />} />
       </Route>
     </Routes>
   );
