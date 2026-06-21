@@ -5,10 +5,13 @@ import CompanyBanner from '../../assets/images/Company_pic/CompanyBanner.webp'
 import { IoStar } from "react-icons/io5";
 import { Creative } from './Creative';
 import { Business } from './Business';
+import { Slate } from './Slate';
+import { Team } from './Team';
+import { Offices } from './Offices';
 
 
 
-export const Company = () => {
+export const CompanyLayout = () => {
   return (
     <>
 
@@ -53,8 +56,9 @@ export const Company = () => {
         
         <Creative/>
         <Business/>
-
-
+        <Slate/>
+        <Team/>
+        <Offices/>
     </Container>
     </>
   )

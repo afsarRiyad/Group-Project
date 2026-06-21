@@ -2,10 +2,15 @@ import React from 'react'
 import Emoji1 from '../../assets/images/Company_pic/Emoji1.webp'
 import Emoji2 from '../../assets/images/Company_pic/Emoji2.webp'
 import Emoji3 from '../../assets/images/Company_pic/Emoji3.webp'
+import Container from '../../components/layouts/Container'
 
 export const Business = () => {
   return (
     <>
+    
+    <Container>
+
+  
       <div className="main mb-[120px]">
         <div className="text-center ">
           <h6 className="font-inter text-[16px] font-medium">Our Values</h6>
@@ -44,6 +49,7 @@ export const Business = () => {
           </div>
         </div>
       </div>
+    </Container>
     </>
   );
 }
