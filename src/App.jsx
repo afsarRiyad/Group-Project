@@ -8,7 +8,7 @@ import { CompanyLayout } from "./pages/Company/CompanyLayout";
 import Regestration from "./components/Regestration";
 import Login from "./components/Login";
 
-import BlogPage from "./pages/blogpage";
+import BlogPage from "./pages/BlogPage";
 
 
 function App() {
