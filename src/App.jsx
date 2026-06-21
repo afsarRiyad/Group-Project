@@ -4,6 +4,9 @@ import Home from './pages/Home';
 import MainLayout from "./components/layouts/MainLayout";
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
+import Regestration from "./components/Regestration";
+import Login from "./components/Login";
+
 
 
 function App() {
@@ -13,6 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/product' element={<Product />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path='/registration' element={<Regestration/>} />
+        <Route path='/login' element={<Login/>} />
+        
+        
       </Route>
     </Routes>
   );
