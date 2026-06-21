@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiWifi, FiLock, FiCheck, FiArrowRight } from 'react-icons/fi';
+import Container from '../layouts/Container';
 
 const PricingSection = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -77,9 +78,9 @@ const PricingSection = () => {
   };
 
   return (
-    <div className="bg-[#EBECEF] min-h-screen py-16 md:py-32 px-6 md:px-12">
+    <div className="bg-[#EBECEF] py-16 md:py-32 px-6 md:px-12">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto mb-16">
+      <Container>
         {/* Top Badge */}
         <p className="text-[#3C4049] text-sm font-inter mb-8 inline-block">
           Free 14-Day Trial
@@ -89,8 +90,7 @@ const PricingSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
           <div>
             <h1 
-              className="text-[#002E25] font-medium leading-tight mb-8"
-              style={{ fontSize: '72px', fontFamily: 'Archivo, sans-serif' }}
+              className="text-[#002E25] font-medium leading-tight mb-8 text-[72px] font-archivo"
             >
               Our Plans scale <br />
               with your{' '}
@@ -136,32 +136,31 @@ const PricingSection = () => {
             </div>
 
             <div 
-              className="px-4 py-1 rounded-full text-xs font-inter"
-              style={{ backgroundColor: '#CDFA89', color: '#002E25' }}
+              className="px-4 py-1 rounded-full bg-[#CDFA89] text-[#002E25] text-xs font-inter"
             >
               30% Off
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* Pricing Cards Section */}
-      <div className="max-w-7xl mx-auto">
+      <Container >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-8 relative transition-all h-full flex flex-col ${
+              className={`rounded-2xl  p-8 relative transition-all flex flex-col ${
                 plan.badge 
                   ? 'bg-white border-2 border-black shadow-lg scale-105' 
                   : 'bg-white border border-gray-200'
-              }`}
+              }
+                  ${plan.name === 'Organizations' ? 'h-95' : '  h-full'}`}
             >
               {/* Popular Badge */}
               {plan.badge && (
                 <div 
-                  className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 rounded-full text-xs font-inter font-semibold"
-                  style={{ backgroundColor: '#000', color: '#fff' }}
+                  className="absolute -top-4 left-1/2 transform bg-[#000] text-[#fff] -translate-x-1/2 px-4 py-1 rounded-full text-xs font-inter font-semibold"
                 >
                   {plan.badge}
                 </div>
@@ -169,16 +168,14 @@ const PricingSection = () => {
 
               {/* Plan Name */}
               <h3 
-                className="font-inter font-semibold mb-3"
-                style={{ fontSize: '18px', color: '#090C10' }}
+                className="font-inter font-semibold mb-3 text-[#090C10] text-[18px]"
               >
                 {plan.name}
               </h3>
 
               {/* Description */}
               <p 
-                className="font-inter mb-6 leading-relaxed flex-grow"
-                style={{ fontSize: '14px', color: '#3C4049' }}
+                className="font-inter mb-6 leading-relaxed flex-grow text-[#3C4049] text-[14px]"
               >
                 {plan.description}
               </p>
@@ -186,8 +183,7 @@ const PricingSection = () => {
               {/* Savings Badge */}
               {plan.savings && (
                 <div 
-                  className="inline-block px-3 py-1 rounded-lg text-xs font-inter font-semibold mb-6"
-                  style={{ backgroundColor: '#CDFA89', color: '#002E25' }}
+                  className="inline-block px-3 py-1 rounded-lg text-xs bg-[#CDFA89] font-inter font-semibold mb-6 text-[#002E25]"
                 >
                   {plan.savings}
                 </div>
@@ -198,14 +194,12 @@ const PricingSection = () => {
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
                     <span 
-                      className="font-inter font-semibold"
-                      style={{ fontSize: '32px', color: '#090C10' }}
+                      className="font-inter font-semibold text-[#090C10] text-[18px]"
                     >
                       ${getPrice(plan)}.00
                     </span>
                     <span 
-                      className="font-inter"
-                      style={{ fontSize: '14px', color: '#3C4049' }}
+                      className="font-inter text-[#3C4049] text-[14px]"
                     >
                       / Month
                     </span>
@@ -214,8 +208,7 @@ const PricingSection = () => {
               ) : (
                 <div className="mb-6">
                   <p 
-                    className="font-inter"
-                    style={{ fontSize: '14px', color: '#3C4049' }}
+                    className={`font-inter text-[#3C4049] text-[14px] ${plan.name === 'Organizations' && 'hidden'}`}
                   >
                     {plan.ctaSubtext}
                   </p>
@@ -246,8 +239,7 @@ const PricingSection = () => {
                           style={{ color: '#090C10' }}
                         />
                         <span 
-                          className="font-inter"
-                          style={{ fontSize: '14px', color: '#3C4049' }}
+                          className="font-inter text-[#3C4049] text-[14px]"
                         >
                           {feature.label}
                         </span>
@@ -261,8 +253,7 @@ const PricingSection = () => {
               {plan.included.length > 0 && (
                 <div className="mb-8">
                   <p 
-                    className="font-inter font-semibold mb-4"
-                    style={{ fontSize: '14px', color: '#090C10' }}
+                    className="font-inter font-semibold mb-4 text-[#090C10] text-[14px]"
                   >
                     Featured Include :
                   </p>
@@ -277,8 +268,7 @@ const PricingSection = () => {
                           style={{ color: '#090C10' }}
                         />
                         <span 
-                          className="font-inter"
-                          style={{ fontSize: '14px', color: '#3C4049' }}
+                          className="font-inter text-[#3C4049] text-[14px]"
                         >
                           {item}
                         </span>
@@ -290,7 +280,7 @@ const PricingSection = () => {
 
               {/* Compare Link */}
               <button 
-                className="font-inter font-semibold mt-auto cursor-pointer pt-8 border-t border-gray-200 flex items-center gap-2 group"
+                className={`font-inter font-semibold mt-auto cursor-pointer pt-8 border-t border-gray-200 flex items-center gap-2 group ${plan.name === 'Organizations' && 'hidden'}`}
                 style={{ fontSize: '14px', color: '#090C10' }}
               >
                 See Compare
@@ -299,11 +289,14 @@ const PricingSection = () => {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </button>
-
+              <div className={`${plan.name === 'Organizations' ? 'block' : 'hidden'} primaryTxt border-t border-t-gray-200`}>
+                <p className='pt-5'>Enjoy customized support with a 
+dedicated Slate team member.</p>
+              </div>
               {/* Documentation Link for Organizations */}
               {plan.name === 'Organizations' && (
                 <button 
-                  className="font-inter text-sm mt-4 flex items-center gap-2"
+                  className="font-inter text-sm mt-4 flex items-center gap-2 cursor-pointer"
                   style={{ color: '#3C4049' }}
                 >
                   <span style={{ fontSize: '18px' }}>ⓘ</span>
@@ -313,12 +306,7 @@ const PricingSection = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Font Import */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
-      `}</style>
+      </Container>
     </div>
   );
 };
