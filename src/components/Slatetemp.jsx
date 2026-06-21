@@ -10,7 +10,7 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 const Slatetemp = () => {
   return (
-    <div className="bg-[#DAE7E3]">
+    <div className="bg-[#DAE7E3] my-20">
       <Container>
         <div className="flex gap-[220px] pt-30">
           <div className="w-[40%] pb-30">
