@@ -52,7 +52,7 @@ export const CompanyLayout = () => {
                 <p className='w-[530px]'>Slate is designed to unleash your creative potential. Whether you're a  marketer, designer, or developer, our intuitive interface and robust features enable you to bring your ideas to life. From creating stunning visuals to crafting engaging content, let your creativity shine with Slate.</p>
             </div>
         </div>
-        {/* Others Section */}
+        {/* Others All Section */}
         
         <Creative/>
         <Business/>
