@@ -11,6 +11,12 @@ import { Link } from "react-router-dom";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import Powerful from "../components/Powerful";
 import Slatetemp from "../components/Slatetemp";
+import OurBlogs from '../components/Home/OurBlogs'
+import StrategicChoice from '../components/Home/StrategicChoice'
+import Customers from '../components/Home/Customers'
+import Productivity from '../components/layouts/Productivity'
+import Testimonials from '../components/Home/Testimonials'
+
 
 const Home = () => {
   return (
@@ -20,7 +26,7 @@ const Home = () => {
           <div className="flex bg-[#DAE7E3]">
             <div className="pt-[112px]">
               <img src={SlateDesign} alt="SlateDesign" />
-              <img src={SlateDesign1} alt="SlateDesign1"/>
+              <img src={SlateDesign1} alt="SlateDesign1" />
             </div>
             <div className="text-center pt-[112px] max-w-[1440px] mx-auto">
               <div className="">
@@ -54,6 +60,7 @@ const Home = () => {
                 </div>
               </div>
 
+
               <div className="pb-[117px]">
                 <p className="text-[14px] text-[#585D69]">This template is free to get started</p>
               </div>
@@ -61,36 +68,36 @@ const Home = () => {
             <div className="pt-[88px] relative">
               <div>
                 <img
-                src={SlateDesign2}
-                alt="SlateDesign2"
-                className="w-[264px] h-[240px] rounded-l-lg pb-7.5"
-              />
+                  src={SlateDesign2}
+                  alt="SlateDesign2"
+                  className="w-[264px] h-[240px] rounded-l-lg pb-7.5"
+                />
               </div>
-              
+
               <div className="absolute right-0">
                 <img
-                src={SlateDesign3}
-                alt="SlateDesign3"
-                className="w-[250px] h-[210px] pl-[20px]"
-              />
+                  src={SlateDesign3}
+                  alt="SlateDesign3"
+                  className="w-[250px] h-[210px] pl-[20px]"
+                />
               </div>
-              
+
             </div>
           </div>
         </div>
-        
+
         <Container>
           <div className="flex gap-11.5 pb-17 max-w-[80%] mx-auto">
             <div className="flex items-center">
-              <img src={boxicon} alt="boxicon" className="pr-10"/>
+              <img src={boxicon} alt="boxicon" className="pr-10" />
               <p className="font-inter text-[14px] text-[#3C4049]">Adjust the features to explain your product to customers</p>
             </div>
             <div className="flex items-center">
-              <img src={staricon} alt="staricon" className="pr-10 "/>
+              <img src={staricon} alt="staricon" className="pr-10 " />
               <p className="font-inter text-[14px] text-[#3C4049]">Adjust the features to explain your product to customers</p>
-            </div> 
+            </div>
             <div className="flex items-center">
-              <img src={roundicon} alt="roundicon" className="pr-10 "/>
+              <img src={roundicon} alt="roundicon" className="pr-10 " />
               <p className="font-inter text-[14px] text-[#3C4049]">Adjust the features to explain your product to customers</p>
             </div>
           </div>
@@ -101,13 +108,18 @@ const Home = () => {
             </div>
             <div className="pt-[176px]">
               <p className="text-[#3C4049] text-[16px] font-inter pb-4.5">Discover a powerful solution that saves your hours of development and design time.</p>
-              <Link to="" className="flex items-center gap-2 text-[#002E25] text-[14px] font-inter font-medium">Learn More <FaCircleArrowRight/> </Link>
+              <Link to="" className="flex items-center gap-2 text-[#002E25] text-[14px] font-inter font-medium">Learn More <FaCircleArrowRight /> </Link>
             </div>
           </div>
         </Container>
       </div>
-      <Powerful/>
-      <Slatetemp/>
+      <Powerful />
+      <Slatetemp />
+      <OurBlogs />
+      <StrategicChoice />
+      <Customers />
+      <Productivity />
+      <Testimonials />
     </>
   );
 };

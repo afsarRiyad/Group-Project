@@ -14,7 +14,6 @@ import Container from "../../components/layouts/Container";
 const Proposition = () => {
   return (
     <Container className="container bg-white">
-        {/* Passion */}
         <div className="grid grid-cols-4 my-25">
             <div className="">
                 <div className="flex">
@@ -61,7 +60,6 @@ const Proposition = () => {
                 </div>
             </div>
         </div>
-        {/* Slate journey */}
         <div className="flex justify-between py-30">
             <div className="">
                 <p className="primaryTxt font-medium">Creative Freedom</p>
@@ -80,7 +78,6 @@ const Proposition = () => {
                 <img src={performance} alt="performance" />
             </div>
         </div>
-        {/* productivity */}
         <div className="bg-[#F6F7F8] w-full rounded-2xl">
             <div className="py-22 px-25 flex justify-between items-center">
                 <div className="pr-40">
@@ -95,7 +92,6 @@ const Proposition = () => {
                 </div>
             </div>
         </div>
-        {/* social media */}
         <div className="grid grid-cols-3 mb-25 mt-8 gap-8">
             <div className="p-8 border border-[#EBECEF] rounded-bl-2xl rounded-md">
                 <div className="flex justify-between items-baseline">
